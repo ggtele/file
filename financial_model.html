@@ -13231,7 +13231,7 @@ width=777
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The advent of technology and the ability to stream or download digital music in the early 2000's, with platforms such as Napster and Apple ushering in a new paradigm of distribution, brought with it a moral question to listeners, to buy or pirate. It was surely seen that music listeners felt that music should be almost free, as the next 20 years saw revenues drop steadily. Many companies have been moderately successful at collecting the pieces of a shocked industry by making it possible to spend around 120 dollars each year to gain unlimited access to somewhere around 600,000,000,000 streamable songs. Though there is a great population of people spending on average about 32 hours of listening per week each, low costs for a huge library has Apple Music only paying $0.00437 per stream (see below). The artists making a living off of their contributions to the cultural and mental wellbeing of the world have had to certainly make the most of other income streams if they aren't somewhere near the top.</p>
+<p>The advent of technology and the ability to stream or download digital music in the early 2000's, with platforms such as Napster and Apple ushering in a new paradigm of distribution, brought with it a moral question to listeners, to buy or pirate. It was surely seen that an increasing amount music listeners felt that music should be almost free, as the next 20 years saw revenues drop steadily as the access to and social acceptibility of illegal downloads became widespread. Many companies have been moderately successful at collecting the pieces of a shocked industry by making it possible to spend around 120 dollars each year to gain unlimited access to somewhere around 600,000,000,000 streamable songs. Though there is a great population of people spending on average about 32 hours of listening per week each, low costs for a huge library has Apple Music only paying $0.00437 per stream (see table below). The artists making a living off of their contributions to the cultural and mental wellbeing of the world have had to certainly make the most of other income streams if they aren't somewhere near the top. To be clear, the streaming platforms are not profitable models, the high cost of licensing music to satisfy consumer demands in addition to the need for streaming payouts lead to many reporting net loss yearly, with Spotify reporting their first year of profitability Q3 2018.</p>
 
 </div>
 </div>
@@ -13291,7 +13291,7 @@ width=777
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>One of the biggest problems with this system of a per-stream payout is that on all platforms, the play of a Taylor Swift song is worth the same as a play of a musician who only reaches '&lt;1000' plays for most of their songs. What Mobius seeks to do is appropriately divert income to artists that are creating high quality music by allowing listeners to more accurately decide where their yearly investment in the music industry goes. The system invisioned creates an incentive for artists to create more affordable merchandise that can be purchased to establish consumers as platform-recognized 'fans'. The thought being that a greater monetary and exposure-based profit margin is found in physical merchandise rather than number of plays, especially for creators with smaller audiences bound to a more limited geographic presence.</p>
+<p>One of the biggest problems with this system of a per-stream payout is that on all platforms, the play of an industry leader's song is worth the same as a play of a musician who only reaches only a few thousand plays for most of their songs. What Mobius seeks to do is appropriately divert income to artists that are creating high quality music by allowing listeners to more accurately decide where their yearly investment in the music industry goes. The system invisioned creates an incentive for artists to create more affordable merchandise &amp; content that can be adjusted and fluctuate close to the law of supply and demand, with the thought that the artists will decide their prices with guidance from Mobius-presented periodic reports on market climates. The thought behind the being that a greater monetary and exposure-based profit margin is found in physical merchandise rather than number of plays, especially for creators with smaller audiences bound to a more limited geographic presence.</p>
 
 </div>
 </div>
@@ -13304,7 +13304,7 @@ width=777
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To look at a consumer based estimate of potential income, we assume that in a given year there exists well over 150$ of material worth purchasing and begin by estimating a probability distribution of consumer spending within that constraint.</p>
+<p>To look at a consumer based estimate of potential income, we assume that in a given year there exists well over 150$ of material worth purchasing and begin by estimating a probability distribution of consumer spending within that constraint. Adjust the variables Alpha &amp; Beta that shift the shape of the histogram, then Max_spent that scales it larger or smaller along the x-axis.</p>
 
 </div>
 </div>
@@ -13361,9 +13361,9 @@ width=777
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Now-projected-over-5-years-with-variable-growth">Now projected over 5 years with variable growth<a class="anchor-link" href="#Now-projected-over-5-years-with-variable-growth">&#182;</a></h3><p>Take the alpha, beta &amp; max_spent values you decided on above and implement them below, this interactive plot shows the projected amount spent on the platform over 5 years given a Beta distribution of consumers.</p>
+<h3 id="Now-projected-over-5-years-with-variable-growth">Now projected over 5 years with variable growth<a class="anchor-link" href="#Now-projected-over-5-years-with-variable-growth">&#182;</a></h3><p>Take the alpha, beta &amp; max_spent values you decided on above and implement them below, this interactive plot shows the projected amount spent on the platform over 5 years given a Beta distribution of consumers. The growth variables:</p>
 <ul>
-<li><p>The Fan_G variable is a growth rate that relates to how many listeners are adopting the new technology (a value of 1 corresponds to each consumer attracting 1 new consumer the next year), it is assumed that 500 people will be interested enough to spend the equivalent cost of one night out, on content or merchandise, in the first year.</p>
+<li><p>The Fan_G variable is a growth rate that relates to how many listeners are adopting the new technology (a value of 1 corresponds to each consumer attracting 1 new consumer the next year), it is assumed that after buying headphones 500 people will be interested enough to spend the equivalent cost of one night out, on content or merchandise, in the first year.</p>
 </li>
 <li><p>The Spending_G variable modifies the max_spent variable. A greater than 0 value implies that listeners will start spending more on artists' content once streaming rights and merchandise sales are connected. A smaller variability is expected.</p>
 </li>
@@ -13383,9 +13383,9 @@ width=777
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi:hide_in</span>
 <span class="k">def</span> <span class="nf">x_s</span><span class="p">():</span> 
-    <span class="n">year</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2019</span><span class="p">]</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">):</span>
-        <span class="n">year_i</span> <span class="o">=</span> <span class="mi">2019</span><span class="o">+</span><span class="n">i</span>
+        <span class="n">year_i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">+</span><span class="n">i</span>
         <span class="n">year</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">year</span><span class="p">,</span><span class="n">year_i</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">year</span>
 
@@ -13414,7 +13414,7 @@ width=777
     <span class="n">avg_spent_1</span> <span class="o">=</span> <span class="n">prof</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">500</span>
     <span class="n">avg_spent_5</span> <span class="o">=</span> <span class="n">prof</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">/</span><span class="n">numb_g</span>
     <span class="n">fa</span> <span class="o">=</span> <span class="mi">500</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;AVG Spent by Fan in 2019/2023:&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">avg_spent_1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;$ /&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">avg_spent_5</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;$&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;AVG Spent by Fan in 1st / 5th year:&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">avg_spent_1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;$ /&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">avg_spent_5</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;$&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of Fans in 1st / 5th year:&#39;</span><span class="p">,</span><span class="n">fa</span><span class="p">,</span><span class="s1">&#39;/&#39;</span><span class="p">,</span><span class="n">numb_g</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Total Dollars Spent on Mobius in 5 years:&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">five_yrincome</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;$&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cummulative Profit through 5 years:&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="mf">0.1</span><span class="o">*</span><span class="n">five_yrincome</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;$&#39;</span><span class="p">)</span>
@@ -13423,7 +13423,7 @@ width=777
     
 <span class="n">opts</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;xlabel&#39;</span><span class="p">:</span> <span class="s1">&#39;Year&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;Total Spent on Mobius ($)&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;Mobius Revenue ($)&#39;</span><span class="p">,</span>
 <span class="p">}</span>
 
 <span class="n">nbi</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x_s</span><span class="p">,</span> <span class="n">y_s</span><span class="p">,</span> <span class="n">Alpha</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="n">Beta</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="n">Max_Spent</span> <span class="o">=</span> <span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="mi">150</span><span class="p">),</span> <span class="n">Fan_G</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">Spending_G</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="o">.</span><span class="mi">01</span><span class="p">),</span> <span class="n">options</span><span class="o">=</span><span class="n">opts</span><span class="p">)</span>
@@ -13455,6 +13455,25 @@ width=777
 </div>
 
   </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Appendix/Source-URL's">Appendix/Source URL's<a class="anchor-link" href="#Appendix/Source-URL's">&#182;</a></h2><p><strong>In order of most helpful to least</strong></p>
+<ul>
+<li><p>Industry overview: <a href="https://redef.com/original/16-years-late-13b-short-but-optimistic-where-growth-will-take-the-music-biz">https://redef.com/original/16-years-late-13b-short-but-optimistic-where-growth-will-take-the-music-biz</a></p>
+</li>
+<li><p>April 30th article on Spotify's major issues: <a href="https://www.rollingstone.com/music/music-features/a-radical-solution-to-spotifys-biggest-problems-and-the-record-industrys-woes-828663/">https://www.rollingstone.com/music/music-features/a-radical-solution-to-spotifys-biggest-problems-and-the-record-industrys-woes-828663/</a></p>
+</li>
+<li><p>Spotify's recent profitability: <a href="https://www.forbes.com/sites/monicamercuri/2019/02/06/spotify-reports-first-quarterly-operating-profit-reaches-96-million-paid-subscribers/#42f04eae5dc9">https://www.forbes.com/sites/monicamercuri/2019/02/06/spotify-reports-first-quarterly-operating-profit-reaches-96-million-paid-subscribers/#42f04eae5dc9</a></p>
+</li>
+<li><p>Music Industry Evolution: <a href="https://www.forbes.com/sites/billrosenblatt/2019/03/02/the-warning-signs-among-the-music-industrys-revenue-growth/#24f423327de3">https://www.forbes.com/sites/billrosenblatt/2019/03/02/the-warning-signs-among-the-music-industrys-revenue-growth/#24f423327de3</a></p>
+</li>
+<li><p>Streaming Music is big, how do we sell consumers more while granting more specific streaming rights, while allocating stream income more appropriately: <a href="https://www.patentlyapple.com/patently-apple/2019/04/streaming-music-now-accounts-for-75-of-music-industry-revenues-.html">https://www.patentlyapple.com/patently-apple/2019/04/streaming-music-now-accounts-for-75-of-music-industry-revenues-.html</a></p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
 
 
 

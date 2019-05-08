@@ -13268,6 +13268,27 @@ width=777
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+
+  <div class="output_subarea output_widget_view ">
+    <button class="js-nbinteract-widget">
+      Loading widgets...
+    </button>
+  </div>
+
+</div>
+
+</div>
+</div>
+
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13371,7 +13392,7 @@ width=777
         <span class="n">year</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">year</span><span class="p">,</span><span class="n">year_i</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">year</span>
 
-<span class="k">def</span> <span class="nf">y_s</span><span class="p">(</span><span class="n">Years</span><span class="p">,</span><span class="n">Alpha</span><span class="p">,</span><span class="n">Beta</span><span class="p">,</span><span class="n">Max_Spent</span><span class="p">,</span><span class="n">Fan_G</span><span class="p">,</span><span class="n">Spending_G</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">y_s</span><span class="p">(</span><span class="n">Years</span><span class="p">,</span><span class="n">Alpha</span><span class="p">,</span><span class="n">Beta</span><span class="p">,</span><span class="n">Max_Spent</span><span class="p">,</span><span class="n">Fan_G</span><span class="p">,</span><span class="n">Spending_G</span><span class="p">,</span><span class="n">Equity</span><span class="p">):</span>
     <span class="n">a</span> <span class="o">=</span> <span class="n">Alpha</span>
     <span class="n">b</span> <span class="o">=</span> <span class="n">Beta</span>
     <span class="n">ms</span> <span class="o">=</span> <span class="n">Max_Spent</span>
@@ -13407,7 +13428,7 @@ width=777
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of Fans in 1st / 5th year:&#39;</span><span class="p">,</span><span class="n">fa</span><span class="p">,</span><span class="s1">&#39;/&#39;</span><span class="p">,</span><span class="n">numb_g</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Total Dollars Spent on Mobius in 5 years:&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">five_yrincome</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;$&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cummulative Profit through 5 years:&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="mf">0.1</span><span class="o">*</span><span class="n">five_yrincome</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;$&#39;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dividend paid in year 5 / year 5 Mobius Profit:&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">yr5_return</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;$ /&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">mob_p</span><span class="p">[</span><span class="mi">4</span><span class="p">]),</span><span class="s1">&#39;$&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dividend paid in year 5 / 5</span><span class="si">% o</span><span class="s1">f Profit / year 5 Mobius Profit:&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">yr5_return</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;$ /&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">mob_p</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">*</span><span class="mf">0.05</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;$ /&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">mob_p</span><span class="p">[</span><span class="mi">4</span><span class="p">]),</span><span class="s1">&#39;$&#39;</span><span class="p">)</span>
         
     <span class="k">return</span> <span class="n">mob_p</span>
     
@@ -13416,10 +13437,31 @@ width=777
     <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;Mobius Profit ($)&#39;</span><span class="p">,</span>
 <span class="p">}</span>
 
-<span class="n">nbi</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x_s</span><span class="p">,</span> <span class="n">y_s</span><span class="p">,</span> <span class="n">Alpha</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="n">Beta</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="n">Max_Spent</span> <span class="o">=</span> <span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="mi">150</span><span class="p">),</span> <span class="n">Fan_G</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">Spending_G</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="o">.</span><span class="mi">01</span><span class="p">),</span> <span class="n">options</span><span class="o">=</span><span class="n">opts</span><span class="p">)</span>
+<span class="n">nbi</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x_s</span><span class="p">,</span> <span class="n">y_s</span><span class="p">,</span> <span class="n">Alpha</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="n">Beta</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="n">Max_Spent</span> <span class="o">=</span> <span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="mi">150</span><span class="p">),</span> <span class="n">Fan_G</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">Spending_G</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="o">.</span><span class="mi">01</span><span class="p">),</span> <span class="n">Equity</span><span class="o">=</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.05</span><span class="p">,</span><span class="mf">0.01</span><span class="p">),</span> <span class="n">options</span><span class="o">=</span><span class="n">opts</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+
+  <div class="output_subarea output_widget_view ">
+    <button class="js-nbinteract-widget">
+      Loading widgets...
+    </button>
+  </div>
+
+</div>
+
 </div>
 </div>
 

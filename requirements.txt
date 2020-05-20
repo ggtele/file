@@ -4,4 +4,5 @@ scipy==1.*
 nbinteract==0.2.*
 pandas==0.24.*
 IPython==7.4.*
-Matplotlib 3.2.1.*
+Matplotlib==3.2.1.*
+Python==3.8.3.*

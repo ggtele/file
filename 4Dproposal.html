@@ -13241,13 +13241,13 @@ width=777
 
   
 
-  <div class="nbinteract-hide_in
+  <div class="nbinteract-hide_in nbinteract-hide_out
       cell border-box-sizing code_cell rendered">
     <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#nbi:hide_in</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># &quot;nbi:hide_in or nbi:hide_out&quot; can hide the code or output</span>
 <span class="k">def</span> <span class="nf">stream_prof</span><span class="p">(</span><span class="n">Income</span><span class="p">):</span>    
     <span class="n">inc</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">Income</span><span class="o">/</span><span class="mi">1000</span><span class="p">))</span>
     <span class="n">pp</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
@@ -13314,15 +13314,13 @@ width=777
 
   
 
-  <div class="nbinteract-hide_in
+  <div class="
       cell border-box-sizing code_cell rendered">
     <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi:hide_in</span>
-
-<span class="k">def</span> <span class="nf">beta_samp</span><span class="p">(</span><span class="n">Alpha</span><span class="p">,</span><span class="n">Beta</span><span class="p">,</span><span class="n">Max_spent</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">beta_samp</span><span class="p">(</span><span class="n">Alpha</span><span class="p">,</span><span class="n">Beta</span><span class="p">,</span><span class="n">Max_spent</span><span class="p">):</span>
     <span class="n">number</span> <span class="o">=</span> <span class="mi">5000</span>
     <span class="n">ssample</span> <span class="o">=</span> <span class="n">Max_spent</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">beta</span><span class="p">(</span><span class="n">Alpha</span><span class="p">,</span><span class="n">Beta</span><span class="p">,</span><span class="n">number</span><span class="p">)</span>
     <span class="n">income</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">ssample</span><span class="p">)</span>
@@ -13377,14 +13375,13 @@ width=777
 
   
 
-  <div class="nbinteract-hide_in
+  <div class="
       cell border-box-sizing code_cell rendered">
     <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi:hide_in</span>
-<span class="k">def</span> <span class="nf">x_s</span><span class="p">():</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">x_s</span><span class="p">():</span> 
     <span class="n">year</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">):</span>
         <span class="n">year_i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">+</span><span class="n">i</span>
@@ -13492,9 +13489,7 @@ width=777
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi : hide_in</span>
-<span class="c1"># nbi : hide_out</span>
-<span class="c1"># costs : in the format of arrays, with consecutive entries as year by year estimates</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># costs : in the format of arrays, with consecutive entries as year by year estimates</span>
 <span class="c1"># form of array is [year 1, year 2, year 3]</span>
 <span class="n">trav_init_i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">15000</span><span class="p">,</span><span class="mi">5000</span><span class="p">,</span><span class="mi">7500</span><span class="p">])</span>
 <span class="n">trav_low_i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10500</span><span class="p">,</span><span class="mi">4500</span><span class="p">,</span><span class="mi">5000</span><span class="p">])</span>
@@ -13585,18 +13580,41 @@ width=777
 
     
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-1-921c14d8c615&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">      3</span> <span class="ansi-red-intense-fg ansi-bold"># costs : in the format of arrays, with consecutive entries as year by year estimates</span>
-<span class="ansi-green-fg">      4</span> <span class="ansi-red-intense-fg ansi-bold"># form of array is [year 1, year 2, year 3]</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 5</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>trav_init_i <span class="ansi-yellow-intense-fg ansi-bold">=</span> np<span class="ansi-yellow-intense-fg ansi-bold">.</span>array<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">15000</span><span class="ansi-yellow-intense-fg ansi-bold">,</span><span class="ansi-cyan-intense-fg ansi-bold">5000</span><span class="ansi-yellow-intense-fg ansi-bold">,</span><span class="ansi-cyan-intense-fg ansi-bold">7500</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">      6</span> trav_low_i <span class="ansi-yellow-intense-fg ansi-bold">=</span> np<span class="ansi-yellow-intense-fg ansi-bold">.</span>array<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">10500</span><span class="ansi-yellow-intense-fg ansi-bold">,</span><span class="ansi-cyan-intense-fg ansi-bold">4500</span><span class="ansi-yellow-intense-fg ansi-bold">,</span><span class="ansi-cyan-intense-fg ansi-bold">5000</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">      7</span> trav_high_i <span class="ansi-yellow-intense-fg ansi-bold">=</span> np<span class="ansi-yellow-intense-fg ansi-bold">.</span>array<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">26000</span><span class="ansi-yellow-intense-fg ansi-bold">,</span><span class="ansi-cyan-intense-fg ansi-bold">7000</span><span class="ansi-yellow-intense-fg ansi-bold">,</span><span class="ansi-cyan-intense-fg ansi-bold">15000</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;np&#39; is not defined</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>items
+[array([[ 350000,  500000, 1500000],
+       [ 200000,  300000,  500000],
+       [ 500000,  715000, 2250000]]), array([[ 5000, 24000, 40000],
+       [ 2000,  8000, 22000],
+       [17000, 55000, 90000]]), array([[ -5000,  -5000,  -4000],
+       [ -2000,  -4000,  -2000],
+       [ -8000, -15000,  -8000]]), array([[ -1000, -15000, -30000],
+       [  -800, -12000, -15000],
+       [ -1200, -20000, -50000]]), array([[-15000,  -5000,  -7500],
+       [-10500,  -4500,  -5000],
+       [-26000,  -7000, -15000]]), array([[-30000, -10000, -13000],
+       [-24000,  -4000,  -5000],
+       [-33000, -20000, -21000]])]
+spread
+[[ 3.00e+05  1.50e+04 -6.00e+03 -4.00e+02 -1.55e+04 -9.00e+03]
+ [ 4.15e+05  4.70e+04 -1.10e+04 -8.00e+03 -2.50e+03 -1.60e+04]
+ [ 1.75e+06  6.80e+04 -6.00e+03 -3.50e+04 -1.00e+04 -1.60e+04]]
+low_r
+[[  14700.  161700.  167700.  164900.  169200.  170700.]
+ [  83500.  267500.  284500.  286500.  284000.  289500.]
+ [-505000.  477000.  497000.  510000.  497500.  503000.]]
+high_r
+[[ 314700.  176700.  161700.  164500.  153700.  161700.]
+ [ 498500.  314500.  273500.  278500.  281500.  273500.]
+ [1245000.  545000.  491000.  475000.  487500.  487000.]]
+year_base
+[[200000.   2000.  -2000.   -800. -10500. -24000.]
+ [300000.   8000.  -4000. -12000.  -4500.  -4000.]
+ [500000.  22000.  -2000. -15000.  -5000.  -5000.]]
+164700.0
+283500.0
+495000.0
+</pre>
 </div>
 </div>
 
@@ -13634,8 +13652,7 @@ width=777
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#nbi : hide_in</span>
-<span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">):</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">):</span> 
     <span class="n">lowr</span> <span class="o">=</span> <span class="n">low_r</span><span class="p">[</span><span class="n">year</span><span class="p">]</span>
     <span class="n">highr</span> <span class="o">=</span> <span class="n">high_r</span><span class="p">[</span><span class="n">year</span><span class="p">]</span>
     <span class="n">spreadsa</span> <span class="o">=</span> <span class="n">spread</span><span class="p">[</span><span class="n">year</span><span class="p">]</span>

@@ -13241,13 +13241,13 @@ width=777
 
   
 
-  <div class="nbinteract-hide_in nbinteract-hide_out
+  <div class="
       cell border-box-sizing code_cell rendered">
     <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># &quot;nbi:hide_in or nbi:hide_out&quot; can hide the code or output</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi:(hide_in or hide_out) can hide the code or output when nbinteract makes the file</span>
 <span class="k">def</span> <span class="nf">stream_prof</span><span class="p">(</span><span class="n">Income</span><span class="p">):</span>    
     <span class="n">inc</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">Income</span><span class="o">/</span><span class="mi">1000</span><span class="p">))</span>
     <span class="n">pp</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
@@ -13277,14 +13277,17 @@ width=777
 
     
 
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-1-17ea437d300a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">     14</span>     display<span class="ansi-yellow-intense-fg ansi-bold">(</span>df<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">1</span><span class="ansi-yellow-intense-fg ansi-bold">:</span><span class="ansi-cyan-intense-fg ansi-bold">10</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     15</span> 
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 16</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>interact<span class="ansi-yellow-intense-fg ansi-bold">(</span>stream_prof<span class="ansi-yellow-intense-fg ansi-bold">,</span>Income<span class="ansi-yellow-intense-fg ansi-bold">=</span>widgets<span class="ansi-yellow-intense-fg ansi-bold">.</span>IntSlider<span class="ansi-yellow-intense-fg ansi-bold">(</span>min<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-cyan-intense-fg ansi-bold">1000</span><span class="ansi-yellow-intense-fg ansi-bold">,</span>max<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-cyan-intense-fg ansi-bold">100000</span><span class="ansi-yellow-intense-fg ansi-bold">,</span>step<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-cyan-intense-fg ansi-bold">1000</span><span class="ansi-yellow-intense-fg ansi-bold">,</span>value<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-cyan-intense-fg ansi-bold">2000</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">;</span>
 
-
-  <div class="output_subarea output_widget_view ">
-    <button class="js-nbinteract-widget">
-      Loading widgets...
-    </button>
-  </div>
-
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;interact&#39; is not defined</pre>
+</div>
 </div>
 
 </div>
